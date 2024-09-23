@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- daisyui link -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- gooogle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- costom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#B4F461',
+                        'btnColor': '#111111B3',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!-- navbar start -->
+    <nav class="flex justify-between sticky  p-4 px-10 z-10 bg-[#F9F7F3]">
+        <div class="">
+            <a href="./index.html">
+                <button class="btn bg-primary font-bold">Home</button>
+            </a>
+        </div>
+        <div class="flex  justify-between gap-1 items-center">
+            <div>
+                <img src="./assets/logo.png" alt="" class="w-7">
+            </div>
+            <div class="font-bold items-center font-Lexend">Donate Bangladesh</div>
+        </div>
+        <div class="flex items-center gap-1">
+            <div>
+                <img src="./assets/coin.png" alt="" class="w-5 h-5">
+            </div>
+            <h1 class="font-semibold flex ">
+                <span id="total-amount">55500</span>
+                <span>BDT</span>
+            </h1>
+        </div>
+    </nav>
+        
+    </header>
+    <main class="mt-24 text-left p-12">
+        <h1 class="text-4xl font-bold mb-3">Important FAQ</h1>
+        <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface used to handle the structure and content of web pages. DOM
+                which converts HTML documents into a tree structure, where each element (eg, tag, attribute, text) is represented as a
+                node.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border ">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>I can take three ways to select an element from the DOM? </p>
+                <p>01. I can grab everything from the whole dom and use styles on it</p>
+                <p>02. I can take the classname from the whole dom and use styles on it</p>
+                <p>03. I can use styles on the entire dome by assuming a special adi</p>
+                <p>04. This method uses a CSS selector to select the first element that matches the selector.</p>
+                <p>05. It selects all elements matching a CSS selector and returns a NodeList.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation in the context of the DOM is an efficient technique that makes the event handling process simpler and
+                more efficient. </p>
+                <p>How event delegation works:
+                Event delegation works based on the concept of event bubbling. Event bubbling is a process where an event first occurs
+                at its specific target (eg, a button click) and then propagates to parent elements in a bubble.</p>
+                <p>01. Why Event Delegation is useful:
+                Less event handler usage: Each child element has event handlers separately!
+               </p>
+               <p>02.Dynamic Element Handling: When new child elements are dynamically added to the DOM, there is no need to add event
+            handlers separately.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>You can use various JavaScript methods to manipulate the attributes and styles of an element using the DOM.</p>
+                <p>01. HTML element attributes like src, href, alt, id, etc. can be manipulated through DOM</p>
+                <p>02. Using the style property of the DOM, we can manipulate the inline style of the element. Also, you can add, remove or
+                toggle CSS classes using classList.</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
